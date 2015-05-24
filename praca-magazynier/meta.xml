@@ -1,0 +1,4 @@
+<meta>
+<script src="c_magazynier.lua" type="client" />
+<script src="s_magazynier.lua" type="server" />
+</meta>
