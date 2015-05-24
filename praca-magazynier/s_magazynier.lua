@@ -35,6 +35,6 @@ addEventHandler("onPlayerQuit", root, function()
 end)
 
 addEvent("givePlayerMoney",true)
-	addEventHandler("givePlayerMoney", resourceRoot, function(client,ile)
+	addEventHandler("givePlayerMoney", resourceRoot, function(ile)
 	givePlayerMoney(client, tonumber(ile))
 end)
