@@ -49,7 +49,7 @@ local function showMarker()
 				toggleControl("sprint", true)
 				toggleControl("enter_exit", true)
 				setElementData(el, "player_job", false)
-				triggerServerEvent("givePlayerMoney", el, 3, 0.4)
+				triggerServerEvent("givePlayerMoney", resourceRoot, 3)
 				triggerServerEvent("delete_obiektMagazynier", el)
 			end, 5000, 1)
 		end
