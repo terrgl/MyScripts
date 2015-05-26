@@ -36,7 +36,7 @@ local function showMarker()
 	rnd=math.random(1, #jobPoints)
 	jobMarker=createMarker(jobPoints[rnd][1], jobPoints[rnd][2], jobPoints[rnd][3], "checkpoint", 1, 0, 0, 255)
 	
-	addEventHandler("onClientMarkerHit", jobMarker, function()
+	addEventHandler("onClientMarkerHit", jobMarker, function(el,md)
 		if el~=localPlayer or not md then return end
 		if not getPedOccupiedVehicle(el) then
 			setElementFrozen(el, true)
@@ -75,3 +75,9 @@ bindKey("e", "down", function()
 		end
 	end
 end)
+
+-- zakaz usuwania
+addEventHandler("onClientResourceStart", resourceRoot, function()
+	outputConsole("[MAGAZYNIER] Uruchomiono zasób, autor: Terr")
+end)
+-- zakaz usuwania
